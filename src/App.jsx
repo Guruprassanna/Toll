@@ -6,7 +6,7 @@ import History from "./Pages/User/History";
 import Wallet from "./Pages/User/Wallet";
 //import Profile from "./Components/Profile";
 import Recharge from "./Pages/User/Recharge";
-import Collect from "./Pages/Operator/collect";
+import Collect from "./Pages/Operator/Collect";
 
 
 import Dash from "./Pages/User/Dash";
