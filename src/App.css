@@ -1,0 +1,239 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Container */
+.auth-container {
+  background: #ffffff;
+  width: 380px;
+  padding: 30px 28px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Inputs */
+.auth-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Button */
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  background: #5a67d8;
+  transform: translateY(-1px);
+}
+
+/* Link text */
+.auth-container p {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-container p button {
+  background: none;
+  color: #667eea;
+  border: none;
+  padding: 0;
+  margin-left: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-container p button:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container {
+  padding: 40px;
+  color: #333;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.card-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.full-card {
+  width: 80%;
+  margin: auto;
+}
+
+.balance {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.primary-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #6c63ff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.alert-card {
+  margin: 30px auto;
+  width: 60%;
+  text-align: center;
+  background: #fff3cd;
+  color: #856404;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 420px) {
+  .auth-container,
+  .history  {
+    width: 90%;
+  }
+}
+/* Reset */
+body {
+  margin: 0;
+}
+
+/* Navbar wrapper */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;        /* 🔑 FULL WIDTH */
+  background: white;
+  z-index: 1000;
+}
+
+/* Navbar content */
+.navbar {
+  max-width: 1200px; /* content limit */
+  margin: 0 auto;    /* center content INSIDE */
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;   /* spacing between About / Wallet / Recharge */
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #4338ca;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+
+
+.logout {
+  background-color: #ef4444;
+ 
+  padding: 6px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #dc2626;
+}
