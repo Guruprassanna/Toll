@@ -22,7 +22,7 @@ export default function Login(){
         
   
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://backend-tiq4.onrender.com/api/auth/login",
         {
           email: form.email,
           password:form.pass,

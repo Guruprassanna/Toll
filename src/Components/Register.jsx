@@ -25,7 +25,7 @@ export default function Register(){
       return;
     }
        const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://backend-tiq4.onrender.com/api/auth/register",
         {
           name:form.username,
           email: form.mailid,

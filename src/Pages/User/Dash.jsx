@@ -9,7 +9,7 @@ export default function Dash() {
     const token = localStorage.getItem("token");
 
     axios
-      .get("http://localhost:5000/api/transactions/history", {
+      .get("https://backend-tiq4.onrender.com/api/transactions/history", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

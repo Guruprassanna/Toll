@@ -16,7 +16,7 @@ useEffect(() => {
     const token = localStorage.getItem("token");
 
     const res = await axios.get(
-      "http://localhost:5000/api/transactions/recent",
+      "https://backend-tiq4.onrender.com/api/transactions/recent",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ useEffect(() => {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          "http://localhost:5000/api/user/profile",
+          "https://backend-tiq4.onrender.com/api/user/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`,
